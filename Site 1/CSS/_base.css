@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-white:#eeeeee;
+}
+
+body{
+    margin: 0;
+
+}
+
+header,
+main,
+footer{
+    /*soverflow-x: hidden; ocultar qualquer conteudo de X que vá alem do que deveria */
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo--studion{
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1ch;
+    font-size: 2rem;
+}
+
+.logo--studion_subtitle {
+    font-weight: 300;
+    font-size: 0.820rem;
+}
+
+.logo--studion a{
+    text-decoration: none;
+    color: white;
+}

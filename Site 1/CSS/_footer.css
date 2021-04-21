@@ -1,0 +1,117 @@
+.footer{
+    background-color: var(--color-black);
+    color: #fff;
+    
+}
+
+
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center; /*alinhamento vertical*/ 
+    padding: 2rem 0;
+   
+}
+
+.footer .logo-studion{
+    font-family: "Montserrat";
+    justify-self: center; /*para ele mesmo se alinhar a esquerda*/
+    margin: 0;
+}
+
+.logo--studion_subtitle{
+    display: block;
+}
+
+.footer__form{
+    justify-self: center;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 12ch auto;
+
+    gap: 1rem;
+}
+
+.footer__form label{
+    font-size: .8rem;
+    font-weight: 300;
+    text-align: right;
+
+}
+
+.footer__form__email{
+    display: grid;
+    grid-template-columns: auto 3rem;
+    padding: 0 1rem;
+}
+
+.footer__form input{
+    background-color: var(--color-primary);
+    border: unset;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+.footer__form input::placeholder{
+color: black;
+}
+
+.footer__form input:focus{
+    outline: unset;
+}
+
+.footer__form button{
+    cursor: pointer;
+    border: unset;
+    transition: 0.3s all ease;
+}
+
+.footer__form button i{
+    justify-self: self-start;
+    
+}
+
+.footer__form button:hover{
+    color: #fff;
+    background-color: var(--color-black);
+}
+
+.footer__social{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 0.5rem;
+    justify-self: center; /*para ele mesmo se alinhar a direita*/
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+    color: #fff;
+
+}
+
+.footer__social a .fa-twitter,
+.footer__social a:visited .fa-twitter,
+.footer__social a:active .fa-twitter{
+    color: var(--color-black);
+}
+
+.footer hr {
+    border: 0.05rem solid #fff4;
+    padding: unset;
+
+}
+
+.footer p{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 300;
+    width: 100%;
+    padding: 1rem;
+    margin: unset;
+}

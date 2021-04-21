@@ -1,0 +1,8 @@
+:root{
+    --color-primary: #ffc500;
+    --color-black: #222;
+    --default--padding: 1rem;
+    
+    color: var(--color-black);
+}
+

@@ -1,0 +1,187 @@
+.slider{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+.slide {
+    display: none;
+    position: relative;
+    height: calc(100vh - 6rem);
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.slide__bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute;
+    top: 8rem;
+    left: 50vw;
+}
+
+.slide__copy h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.slide__copy h6{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem ;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+#counter {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+   
+ }
+ 
+ .counter__container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ; /*colocar um ao lado do outro, com tamanho minimo de 300px ou 1fr, repeteindo de mandeira automatica */
+     place-items: center;
+     padding: 3rem;
+ 
+ }
+ 
+ .counter__container h3{
+     font-size: 2rem;
+     font-weight: 700;
+ }
+ 
+ .counter__container h3 small{
+     display: block;
+     font-size: 1rem;
+     font-weight: 400;
+ }
+ 
+ .institucional{
+     gap: 3rem ; /*defini o espaçamento entre um elemento e outro*/
+     display: grid;
+     grid-template-columns: auto auto;
+     align-items: center; /*conteúdos no centro*/
+     padding: 3rem;
+ }
+ 
+ .institucional__image{
+     max-width: 550px;
+ }
+ 
+ .institucional__copy{
+     padding: 0 1rem;   
+ }
+ 
+ .institucional__copy h6{
+     font-size: .8rem;
+     font-weight: 400;
+     letter-spacing: .2rem;
+     text-transform: uppercase;
+     margin: 0;
+     line-height: 1.5rem;
+ }
+ 
+ .institucional__copy h4{
+     font-size: 1.5rem;
+     margin-top: 1rem ;
+     
+ }
+ 
+ .institucional p{
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.0625rem;
+     line-height: 1.2rem;
+     margin-bottom: 0;
+     margin-bottom: 2.5rem;
+ }
+
+ 
+.quote{
+    background-image: url(/images/parallax.jpg);
+    background-attachment: fixed; /* importante para parallax*/
+    background-repeat: no-repeat; /* importante para parallax*/
+    background-size: cover;/* importante para parallax - aumenta a img*/
+    background-position: center ; /* importante para parallax*/
+}
+
+.quote__container{
+    display: grid;/*conteúdos no centro*/
+    align-items: center;/*conteúdos no centro*/
+    justify-items: end;
+    min-height: 80vh; /*80% do view port*/
+}
+
+.quote__copy{
+    background-color: #fff ;
+    padding: 5rem 4rem;
+}
+
+.quote__copy h6{
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2rem;
+    max-width: 55ch; /*limitando a largura em no máximo 40 carecteres*/
+    margin-top: 0;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -.2rem;
+    line-height: 4rem;
+    margin: 1.5rem 0;
+}
+
+.quote__copy h2 span{
+    display: block;
+}

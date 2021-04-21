@@ -1,0 +1,112 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+
+}
+
+.contact h3{
+    margin: 0;
+    margin-bottom: 1rem;
+
+}
+
+.contact__info h3:nth-of-type(2){
+    margin-top: 2rem;
+}
+
+.contact__info,
+.contact__form {
+    padding: 4rem 0 ; /*formato de caixa nos bo*/
+}
+
+.contact__info_container,
+.contact__form__container {
+    width: 540px;
+    padding-left:7rem;
+}
+
+.contact__info_container{
+    float: right;
+    padding-right:7rem;
+
+}
+
+.contact__form__container {
+    padding-left:7rem;
+}
+
+.contact__form{
+    padding-left:7rem ;
+    background-color:var(--color-black);
+    color: white;
+
+}
+
+.contact__form label,
+.contact__form input {
+    display: block;
+}
+
+.contact__form label{
+    font-weight: 400;
+}
+
+.contact__form input{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    background: unset;
+    border: unset;
+    border-bottom: 0.05rem solid #fff;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.contact__form input:focus{
+    outline: unset;
+}
+
+.contact__info span{
+    display: block; /*alinhar um elemento dentro de um grid*/
+}
+
+.contact__info{
+    background-color:white;
+}
+
+
+.contact__info i {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.contact__info .fa-phone {
+    font-size: 1rem;
+    justify-self:center;
+
+}
+
+.contact__info span {
+    display: grid;
+    grid-template-columns: 1.5rem auto;
+    gap: .5rem;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+.contact__form button {
+   float: right;
+}
+
+
+
+.maps, 
+.maps iframe{
+    height: 25rem;
+}
