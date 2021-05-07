@@ -2,48 +2,39 @@
     box-sizing: border-box;
 }
 
+/*mobile*/
 :root{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    --color-white:#eeeeee;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.25vw;
+
+}
+
+/*Tablet*/
+@media screen and (min-width: 720px) {
+    :root {
+        font-size: 2.25vw;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1280px) {
+    :root {
+        font-size:16px;
+    }
 }
 
 body{
     margin: 0;
-
 }
 
 header,
 main,
-footer{
-    /*soverflow-x: hidden; ocultar qualquer conteudo de X que vá alem do que deveria */
+footer { 
+    overflow-x: hidden; /*ocultar qualquer conteudo de X que vá alem do que deveria */
 }
 
 ul{
     display: flex;
     list-style: none;
     padding-left: 0;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.logo--studion{
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 1ch;
-    font-size: 2rem;
-}
-
-.logo--studion_subtitle {
-    font-weight: 300;
-    font-size: 0.820rem;
-}
-
-.logo--studion a{
-    text-decoration: none;
-    color: white;
 }

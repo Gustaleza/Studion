@@ -5,14 +5,16 @@
 
 @import "./CSS/_variables.css";
 @import "./CSS/_base.css";
-@import "./CSS/_navbar.css";
-@import "./CSS/_footer.css";
 @import "./CSS/_utils.css";
+@import "./CSS/_logo.css";
 @import "./CSS/_btn.css";
+
+@import "./CSS/_navbar.css";
 @import "./CSS/_hero.css";
-@import "./CSS/_empresa.css";
+@import "./CSS/_footer.css";
 
 @import "./CSS/_home.css";
 @import "./CSS/_contact.css";
 @import "./CSS/_testimonials.css";
+@import "./CSS/_empresa.css";
 
